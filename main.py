@@ -138,7 +138,7 @@ async def on_message(message):
         if randomNum==5:
             await message.channel.send(embed=discord.Embed(title="오늘의유머는 해볼 생각 없어?", color=0x0000ff))
         if randomNum==6:
-            await message.channel.send(embed=discord.Embed(title="정신병원 갤러리 웹사이트는 어떠니??", color=0x0000ff))            
+            await message.channel.send(embed=discord.Embed(title="겨울왕국 갤러리는 어떠니??", color=0x0000ff))            
 
     if message.content.startswith("!볼 만한 유튜버 추천"):             #다소 편협함. 추가바람.
         dtime = datetime.datetime.now()
@@ -744,7 +744,7 @@ async def on_message(message):
         embed.add_field(name="- 최신 브리핑 1 : " + briefTasks[0][0],value="Link : " + briefTasks[0][1],inline=False)
         embed.add_field(name="- 최신 브리핑 2 : " + briefTasks[1][0], value="Link : " + briefTasks[1][1], inline=False)
         embed.set_thumbnail(url="https://wikis.krsocsci.org/images/7/79/%EB%8C%80%ED%95%9C%EC%99%95%EA%B5%AD_%ED%83%9C%EA%B7%B9%EA%B8%B0.jpg")
-        embed.set_footer(text='*도리도리곰도리는 절대적 최고자(God), 만물의 창조자, 만물의 주재자 이다.')
+        embed.set_footer(text='#사회적 거리두기 #Stay at Home')
         await message.channel.send("Covid-19 Virus Korea Status", embed=embed)   
 
 
