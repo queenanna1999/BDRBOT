@@ -1,6 +1,6 @@
-# BDRBOT
-queenanna1999/BDRBOT<br />
-상업적으로 활용만 하지 말아주세요.<br />
-사용하실때는 원저작자 표기해주세요.</br>
-# 원저작자 표기
-!코로나 기능은 J-h/o/p/l/i/n/1님의 깃허브 오픈소스를 참고하였습니다.
+# BDRBOT -Discord Chat Bot
+  Please do not use these source files for commercial use.
+  Be sure to mark the source.
+
+# Reference
+  COVID19-related source files: <a href="https://github.com/J-hoplin1/Covid19-Information-bot">J-hoplin1</a>
