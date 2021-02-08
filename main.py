@@ -27,7 +27,7 @@ async def on_ready():
     print(app.user.name)                                   #그냥 사람으로치면 웹사이트에 로그인하는 과정이라고 보시면 됩니다.
     print(app.user.id)
     print('===============')
-    game = discord.Game("배돌이에게 !도와줘라고 도움을 요청해보렴!")
+    game = discord.Game("!도와줘 = 명령어 모음")
     await app.change_presence(status=discord.Status.online, activity=game)
     
 @app.event
@@ -60,14 +60,7 @@ async def on_message(message):
 
         #embed.set_footer(text = '')
         dtime = datetime.datetime.now()
-        #print(dtime[0:4]) # 년도
-        #print(dtime[5:7]) #월
-        #print(dtime[8:11])#일
-        #print(dtime[11:13])#시
-        #print(dtime[14:16])#분
-        #print(dtime[17:19])#초
         embed.set_footer(text=str(dtime.year)+"년 "+str(dtime.month)+"월 "+str(dtime.day)+"일 "+str(dtime.minute)+"분 "+str(dtime.second)+"초")
-        #embed.set_footer(text=dtime[0:4]+"년 "+dtime[5:7]+"월 "+dtime[8:11]+"일 "+dtime[11:13]+"시 "+dtime[14:16]+"분 "+dtime[17:19]+"초")
         embed.add_field(name = '!안녕', value = '배돌이가 인사를 해줍니다',inline = False)
         embed.add_field(name='!코로나', value='배돌이가 실시간 코로나 현황을 불러옵니다', inline=False)
         embed.add_field(name='!컴퓨터는?', value=' 배돌이가 믿음직한 컴퓨터 업체들을 선별해드립니다 (광고 X) ', inline=False)
